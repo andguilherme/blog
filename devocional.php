@@ -95,26 +95,7 @@
                         <!-- end of single post -->
                         <!-- single post -->
                         
-                        <div class="all politica">
-                            <div class="post-img">
-                                <img src="img/devocionais/dev6.jpg" alt="post">
-                            </div>
-
-                            <div class="post-content">
-                                <div class="post-content-top">
-                                    <span><i class="fas fa-calendar"></i>01 Janeiro, 2XXX</span>
-                                </div>
-                                <h2>Lorem ipsum dolor sit amet</h2>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae
-                                    aspernatur
-                                    possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni
-                                    corporis vero eius accusantium quidem, consectetur nesciunt!</p>
-                            </div>
-                            <button type="button" class="read-btn">Leia Mais</button>
-                        </div>
-                        <!-- end of single post -->
-                        <!-- single post -->
-                       
+                                            
                       
                         <?php include('devocionaiscriadas.html') ?>
                        

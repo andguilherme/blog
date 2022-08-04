@@ -92,7 +92,7 @@
                      <option selected value="">Criar Artigo</option>
                      <option value=" ../forms/form-devocional.php">Criar Devocional</option>
                      <option value="../forms/form-narracao.php">Criar Narracao</option>
-                     <option value="../forms/gerenciar-categoria.php">Gerenciar Categoria</option>
+                     <!-- <option value="../forms/gerenciar-categoria.php">Gerenciar Categoria</option> -->
                  </select>
              </div>
 
@@ -135,18 +135,18 @@
                  </div>
                  <div>
                      <label for="msg">Texto:</label>
-                     <textarea id="msg" name="texto" placeholder="insira o primero paragrafo" required></textarea>
+                     <textarea id="msg" class="p1" name="texto" placeholder="insira o primero paragrafo" required></textarea>
                  </div>
                  <div>
-                     <label for="msg"></label>
-                     <textarea id="msg" name="p2" placeholder="insira o segundo paragrafo"></textarea>
+                     <!-- <label for="msg"></label> -->
+                     <textarea id="msg" class="p2" name="p2" placeholder="insira o segundo paragrafo"></textarea>
                  </div>
                  <div>
-                     <label for="msg"></label>
+                     <!-- <label for="msg"></label> -->
                      <textarea id="msg" class="p3" name="p3" placeholder="insira o terceito paragrafo" style="display: none;"></textarea>
                  </div>
                  <div>
-                     <label for="msg"></label>
+                     <!-- <label for="msg"></label> -->
                      <textarea id="msg" name="p4" placeholder="insira o quarto paragrafo" style="display: none;"></textarea>
                  </div>
                  <div>
@@ -175,7 +175,7 @@
          a = document.querySelectorAll('#adm');
          for (let i = 6; i < 8; i++) {
              a[0][i].style.display = 'block';
-             a[0][i].style.margin = '0px 14%';
+             //a[0][i].style.margin = '0px 14%';
 
          }
 

@@ -1,6 +1,7 @@
 <?php
 if (isset($_POST['enviar'])) {
     $titulo = $_POST['titulo'];
+    $subtitulo = $_POST['subtitulo'];
     $n = random_int(1, 999);
     $arquivo = 'devocional' . $n . '.html';
     $paragrafo1 = $_POST['texto'];
@@ -81,10 +82,12 @@ file_put_contents($arquivo, '<!DOCTYPE html>
             <i class="fas fa-bars"></i>
         </div>
     </header>
+    <div class="container-all" id="move-content">
     <div class="container-content">
     <article>
     <h1>' . $titulo . '</h1>
     <img src="'.$pasta.$novoNome.'" alt="">
+    <strong><p>' . $subtitulo . '</p></strong>
     <p>' . $paragrafo1 . '</p>    
     <p>' . $paragrafo2 . '</p> 
     <p>' . $paragrafo3 . '</p> 
@@ -110,7 +113,7 @@ file_put_contents($arquivo, '<!DOCTYPE html>
     </div>
 
 </div>
-
+</div>
 <script src="../js/script.js"></script>
 </body>
 </html>');

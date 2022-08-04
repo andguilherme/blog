@@ -76,7 +76,7 @@
                      <option value="../pags/admin.php">Criar Artigo</option>
                      <option selected value="#">Criar Devocional</option>
                      <option value="form-narracao.php">Criar Narracao</option>
-                     <option value="gerenciar-categoria.php">Gerenciar Categoria</option>
+                     <!-- <option value="gerenciar-categoria.php">Gerenciar Categoria</option> -->
                  </select>
              </div>
 
@@ -107,12 +107,16 @@
                      </script>
                  </div>
                  <div>
+                     <label for="sub">Subtitulo:</label>
+                     <input type="text" id="sub" name="subtitulo"/>
+                 </div>
+                 <div>
                      <label for="msg">Texto:</label>
-                     <textarea id="msg" name="texto" placeholder="insira o primero paragrafo" required></textarea>
+                     <textarea id="msg"  class="p1" name="texto" placeholder="insira o primero paragrafo" required></textarea>
                  </div>
                  <div>
                      <label for="msg"></label>
-                     <textarea id="msg" name="p2" placeholder="insira o segundo paragrafo"></textarea>
+                     <textarea id="msg"class="p2" name="p2" placeholder="insira o segundo paragrafo"></textarea>
                  </div>
                  <div>
                      <label for="msg"></label>
@@ -146,16 +150,16 @@
      let btnadd = document.querySelector("#addP");
      btnadd.addEventListener("click", function() {
          a = document.querySelectorAll('#adm');
-         for (let i = 6; i < 8; i++) {
+         for (let i = 6; i < 9; i++) {
              a[0][i].style.display = 'block';
-             a[0][i].style.margin = '0px 14%';
+            // a[0][i].style.margin = '0px 14%';
 
          }
 
 
      })
  </script>
- <script src="../../js/script.js"></script>
+
 
 
 
