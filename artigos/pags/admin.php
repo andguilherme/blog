@@ -92,6 +92,7 @@
                      <option selected value="">Criar Artigo</option>
                      <option value=" ../forms/form-devocional.php">Criar Devocional</option>
                      <option value="../forms/form-narracao.php">Criar Narracao</option>
+                     <option value="../forms/form-deletaArquivo.php">Deletar Artigo</option>
                      <!-- <option value="../forms/gerenciar-categoria.php">Gerenciar Categoria</option> -->
                  </select>
              </div>

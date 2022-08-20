@@ -75,7 +75,7 @@
     </div>
 
     <ul id="box-search">
-            <?php include('titulosPesquisa.html') ?>
+        <?php include('titulosPesquisa.html') ?>
     </ul>
 
     <div id="cover-ctn-search"> </div>
@@ -143,33 +143,10 @@
 
                     </div>
 
-                    <div class="post" data-category="CSS">
-
-                        <div class="ctn-img"><img src="../../img/artigos/flores5.jpg" alt=""></div>
-                        <h2>INDICADOR DE ARTIGOS 2</h2>
-                        <span>26 fevereiro 2020 - 1:32 am</span>
-                        <ul class="ctn-tag">
-                            <li>CSS</li>
-                        </ul>
-                        <a href="#"><button>ler mais</button></a>
-
-                    </div>
-
-                    <div class="post" data-category="PHP">
-
-                        <div class="ctn-img"><img src="../../img/artigos/flores6.jpg" alt=""></div>
-                        <h2>ARTIGO % 2</h2>
-                        <span>26 fevereiro 2020 - 1:32 am</span>
-                        <ul class="ctn-tag">
-                            <li>PHP</li>
-                        </ul>
-                        <a href="#"><button>ler mais</button></a>
-
-                    </div>
 
                     <?php include('artigoscriados.html') ?>
                 </div>
-              <!--   <div class="setNav">
+                <!--   <div class="setNav">
                     <a href="../../index.html"> <i class='bx bxs-chevron-left'></i></a>
                     <select name="part" id="ipart" onchange="pag()">
                         <option value="../../index.html">1</option>
@@ -218,7 +195,9 @@
     </main>
     </div>
     <script src="../../js/script.js"></script>
-
+    <script> 
+    a = document.querySelector('<?php echo $catId ?>');
+   </script>
 </body>
 
 </html>

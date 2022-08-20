@@ -21,29 +21,28 @@
                 <span id="titulo">Um amor de esposa</span>
                 <span id="subt">por Kelly Cunha</span>
             </div>
-        
-        <div class="menu" id="show-menu">
 
-            <nav>
-                <ul>
-                    <li><a href="index.html">
-                            <i class="fas fa-home"></i>Início</a></li>
-                    <li><a href="artigos/pags/artigos.php"> <i class="fas fa-file-alt"> </i>Artigos</a></li>
-                    <li><a href="narracao.php"> <i class="fab fa-youtube"></i> Narrações</a></li>
-                    <li class="menu-selected"><a href="devocional.php" class="text-menu-selected"> <i
-                                class="fas fa-file-alt"></i> Devocionais</a></li>
-                    <li><a href="#"> <i class="fas fa-home"></i> Serviços/Produtos</a></li>
-                    <li><a href="#"> <i class="fas fa-home"></i> Viagens</a></li>
-                    <li><a href="../login_page/index.php"><i class="fas fa-cog"></i>Admin</a></li>
-                </ul>
-            </nav>
+            <div class="menu" id="show-menu">
 
-        </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">
+                                <i class="fas fa-home"></i>Início</a></li>
+                        <li><a href="artigos/pags/artigos.php"> <i class="fas fa-file-alt"> </i>Artigos</a></li>
+                        <li><a href="narracao.php"> <i class="fab fa-youtube"></i> Narrações</a></li>
+                        <li class="menu-selected"><a href="devocional.php" class="text-menu-selected"> <i class="fas fa-file-alt"></i> Devocionais</a></li>
+                        <li><a href="#"> <i class="fas fa-home"></i> Serviços/Produtos</a></li>
+                        <li><a href="#"> <i class="fas fa-home"></i> Viagens</a></li>
+                        <li><a href="../login_page/index.php"><i class="fas fa-cog"></i>Admin</a></li>
+                    </ul>
+                </nav>
+
+            </div>
 
 
-        <div id="icon-menu">
-            <i class="fas fa-bars"></i>
-        </div>
+            <div id="icon-menu">
+                <i class="fas fa-bars"></i>
+            </div>
     </header>
 
 
@@ -58,7 +57,7 @@
         </div>
         <ul id="ul">
             <?php include('devocionais/titulos_dev_pesq.html')  ?>
-           <!--  <li><a href="#">Me faz deitar em verdes pastos</a></li>
+            <!--  <li><a href="#">Me faz deitar em verdes pastos</a></li>
             <li><a href="#">Pescadores de Homens</a></li>
             <li><a href="#">Casamento Blindado</a></li>
             <li><a href="#">Edificar casa sobre a rocha</a></li> -->
@@ -74,38 +73,16 @@
                 <div class="posts-collect">
                     <div class="posts-main-container">
                         <!-- single post -->
-                        <div class="all escrituras">
-                            <div class="post-img">
-                                <img src="img/biblia-estrada.jpg" alt="post">
-
-                            </div>
-
-                            <div class="post-content">
-                                <div class="post-content-top">
-                                    <span><i class="fas fa-calendar"></i>01 Janeiro, 2XXX</span>
-                                </div>
-                                <h2>Lorem ipsum dolor sit amet</h2>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae
-                                    aspernatur
-                                    possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni
-                                    corporis vero eius accusantium quidem, consectetur nesciunt!</p>
-                            </div>
-                            <button type="button" class="read-btn" onclick="javascript:window.history.back()">Leia Mais</button>
-                        </div>
-                        <!-- end of single post -->
-                        <!-- single post -->
-                        
-                                            
                       
                         <?php include('devocionaiscriadas.html') ?>
-                       
-                        </div>
-                        
-                        <!-- end of single post -->
+
                     </div>
+
+                    <!-- end of single post -->
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- JS file -->

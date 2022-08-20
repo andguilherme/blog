@@ -2,7 +2,7 @@
 if (isset($_POST['enviar'])) {
     $titulo = $_POST['titulo'];
     $n = random_int(1, 999);
-    $arquivo = 'artigo' . $n . '.html';
+    $arquivo = 'artigos/'.'artigo' . $n . '.html';
     $paragrafo1 = $_POST['texto'];
     $paragrafo2 = $_POST['p2'];
     $paragrafo3 = $_POST['p3'];
@@ -27,7 +27,7 @@ if (isset($_POST['enviar'])) {
         $tmp = $_FILES['imagem']['tmp_name'];
         $novoNome = uniqid().".$extensao";  //uniqid cria um id único
             if (move_uploaded_file($tmp,$pasta.$novoNome)){  //move_uploaded_file move o arquivo para o servidor
-               echo "<script>alert ('pagina $arquivo criado com sucesso');
+               echo "<script>alert ('Artigo criado com sucesso');
                window.location.href = ('admin.php');
                </script>";
 
@@ -47,8 +47,8 @@ file_put_contents($arquivo, '<!DOCTYPE html>
 
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="../../css/principal.css">
-    <link rel="stylesheet" href="../../css/artigo.css">
+    <link rel="stylesheet" href="../../../css/principal.css">
+    <link rel="stylesheet" href="../../../css/artigo.css">
 
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
@@ -63,13 +63,13 @@ file_put_contents($arquivo, '<!DOCTYPE html>
             <div class="menu" id="show-menu">
                 <nav>
                     <ul>
-                    <li><a href="../../index.html"><i class="fas fa-home"></i>Início</a></li>
+                    <li><a href="../../../index.html"><i class="fas fa-home"></i>Início</a></li>
                     <li class="menu-selected"><a href="artigos.php" class="text-menu-selected"><i class="fas fa-file-alt"> </i>Artigos</a></li>
-                    <li><a href="../../narracao.php"><i class="fab fa-youtube"></i> Narrações</a></li>
-                    <li><a href="../../devocional.php"><i class="fas fa-file-alt"></i> Devocionais</a></li>
+                    <li><a href="../../../narracao.php"><i class="fab fa-youtube"></i> Narrações</a></li>
+                    <li><a href="../../../devocional.php"><i class="fas fa-file-alt"></i> Devocionais</a></li>
                     <li><a href="#"><i class="fas fa-clone"></i> Serviços/Produtos</a></li>
                     <li><a href="#"><i class="fab fa-angellist"></i> Viagens</a></li>
-                    <li><a href="admin.php"><i class="fas fa-cog"></i>Admin</a></li>
+                    <li><a href="../../../../login_page/index.php"><i class="fas fa-cog"></i>Admin</a></li>
                     </ul>
                 </nav>
             </div>
@@ -81,7 +81,7 @@ file_put_contents($arquivo, '<!DOCTYPE html>
     <div class="container-content">
     <article>
     <h1>' . $titulo . '</h1>
-    <img src="'.$pasta.$novoNome.'" alt="">
+    <img src="'.'../'.$pasta.$novoNome.'" alt="">
     <p>' . $paragrafo1 . '</p>    
     <p>' . $paragrafo2 . '</p> 
     <p>' . $paragrafo3 . '</p> 
@@ -115,6 +115,7 @@ file_put_contents($arquivo, '<!DOCTYPE html>
 }
 
 $art = fopen('artigoscriados.html', 'a+' ); 
+
 fwrite($art, '
 <div class="post" data-category="'.$categoria.'">
 
@@ -137,8 +138,8 @@ $pesqart = fopen('titulosPesquisa.html', 'a+' );
 fwrite($pesqart, '
         <li><a href="'.$arquivo.'"><i class="fas fa-search"></i>'.$titulo.'</a></li>
        
-' .PHP_EOL); 
-fclose($art);
+'); 
+fclose($pesqart);
 
 
 
