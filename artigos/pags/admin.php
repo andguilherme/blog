@@ -1,10 +1,11 @@
  <?php
-
+    require('../db/conexao.php');
     session_start();
 
     if (!isset($_SESSION['username'])) {
         header("Location: ../../index.html");
     }
+
     ?>
 
  <!DOCTYPE html>
@@ -127,12 +128,10 @@
                          <option value="MARGARIDAS">MARGARIDAS</option>
                          <option value="NODEJS">NODEJS</option>
                          <option value="VUE">VUE</option>
-                         <option value="CAMPOS">CAMPOS</option>
+                         <option value="CAMPO">CAMPO</option>
 
                      </select>
-                     <script>
-                         valor = document.querySelectorAll('chk-categ').value
-                     </script>
+                     
                  </div>
                  <div>
                      <label for="msg">Texto:</label>
@@ -156,9 +155,6 @@
                  <div class="button">
                      <button type="submit" name="enviar">Salvar</button>
                  </div>
-
-
-
 
              </form>
 

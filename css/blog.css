@@ -156,12 +156,14 @@ input[type="radio"] {
 
 .posts {
     width: 100%;
-    
-    display: grid;
+    flex-wrap: wrap;
+    display: flex;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
     margin-top: 20px;
     padding: 20px;
+    justify-content: flex-start;
+
 }
 
 .posts .post {
@@ -278,6 +280,7 @@ input[type="radio"] {
 
 [value="TODOS"]:checked~.posts .post[data-category] {
     display: block;
+    width: 277px;
 }
 
 [value="LAVANDA"]:checked~.posts .post:not([data-category~="LAVANDA"]),

@@ -102,8 +102,7 @@ if (!isset($_SESSION['username'])) {
                         foreach ( $cdir as $arquivo) { 
                         $caminho = $pasta.$arquivo;
                      echo "<option value='$caminho'>$arquivo</option>";
-                                         
-                    }
+                      }
 
                }
               

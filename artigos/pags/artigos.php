@@ -75,7 +75,7 @@
     </div>
 
     <ul id="box-search">
-        <?php include('titulosPesquisa.html') ?>
+        <?php include('titulosPesquisa.php') ?>
     </ul>
 
     <div id="cover-ctn-search"> </div>
@@ -116,59 +116,8 @@
 
                 <div class="posts" id="pri">
 
-
-                    <div class="post" data-category="TULIPAS CULTIVAR">
-
-                        <div class="ctn-img"><img src="../../img/artigos/flores3.jpg" alt=""></div>
-                        <h2>Tulipas 2</h2>
-                        <span>26 fevereiro 2020 - 1:32 am</span>
-                        <ul class="ctn-tag">
-                            <li>TULIPAS</li>
-                            <li>CULTIVAR</li>
-                        </ul>
-                        <a href="#"><button>ler mais</button></a>
-
-                    </div>
-
-                    <div class="post" data-category="MARGARIDAS CULTIVAR">
-
-                        <div class="ctn-img"><img src="../../img/artigos/flores4.jpg" alt=""></div>
-                        <h2>Uau!😍 Margaridas 2</h2>
-                        <span>26 fevereiro 2020 - 1:32 am</span>
-                        <ul class="ctn-tag">
-                            <li>MARGARIDAS</li>
-                            <li>CULTIVAR</li>
-                        </ul>
-                        <a href="#"><button>ler mais</button></a>
-
-                    </div>
-
-
-                    <?php include('artigoscriados.html') ?>
+                    <?php include('artigoscriados.php') ?>
                 </div>
-                <!--   <div class="setNav">
-                    <a href="../../index.html"> <i class='bx bxs-chevron-left'></i></a>
-                    <select name="part" id="ipart" onchange="pag()">
-                        <option value="../../index.html">1</option>
-                        <option selected value="#">2</option>
-                        <option value="#.html">3</option>
-                        <option value="#.html">4</option>
-                        <option value="#.html">5</option>
-                        <option value="#.html">6</option>
-                        <option value="#.html">7</option>
-                        <option value="#.html">8</option>
-                        <option value="#.html">9</option>
-                        <option value="#..html">10</option>
-                    </select>
-                    <a href="3.html"> <i class='bx bxs-chevron-right'></i></a>
-
-                </div> -->
-                <!--<div class="pag">
-                <ul>
-                    <li><a href="#pri">1</a></li>
-                    <li><a href="#seg">2</a></li>
-                </ul>
-                </div><-->
 
                 <div class="container-footer">
 
@@ -195,9 +144,9 @@
     </main>
     </div>
     <script src="../../js/script.js"></script>
-    <script> 
-    a = document.querySelector('<?php echo $catId ?>');
-   </script>
+    <script>
+        a = document.querySelector('<?php echo $catId ?>');
+    </script>
 </body>
 
 </html>
