@@ -3,7 +3,7 @@
     session_start();
 
     if (!isset($_SESSION['username'])) {
-        header("Location: ../../index.html");
+        header("Location: ../../index.php");
     }
 
     ?>
@@ -51,7 +51,7 @@
              <div class="menu" id="show-menu" style="display:none;">
                  <nav>
                      <ul>
-                         <li><a href="../../index.html"><i class="fas fa-home"></i>Início</a></li>
+                         <li><a href="../../index.php"><i class="fas fa-home"></i>Início</a></li>
                          <li><a href="artigos.php"><i class="fas fa-file-alt"> </i>Artigos</a></li>
                          <li><a href="../../narracao.php"><i class="fab fa-youtube"></i> Narrações</a></li>
                          <li><a href="../../devocional.php"><i class="fas fa-file-alt"></i> Devocionais</a></li>
@@ -127,7 +127,7 @@
                          <option value="TULIPAS">TULIPAS</option>
                          <option value="MARGARIDAS">MARGARIDAS</option>
                          <option value="NODEJS">NODEJS</option>
-                         <option value="VUE">VUE</option>
+                         <option value="FÉ">FÉ</option>
                          <option value="CAMPO">CAMPO</option>
 
                      </select>

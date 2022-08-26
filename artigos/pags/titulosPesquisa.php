@@ -17,7 +17,8 @@ $sqlT = "SELECT * FROM titulos";
 $result = mysqli_query($conn, $sqlT);
 
 while ($titulos = mysqli_fetch_array($result)) {
-    echo utf8_encode($titulos['titulo']);
+    $t = utf8_encode($titulos['titulo']);
+    echo iconv('UTF-8', 'ISO-8859-1', $t);
 }
 
 

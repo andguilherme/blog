@@ -45,7 +45,7 @@
 
                 <nav>
                     <ul>
-                        <li class="menu-selected"><a href="index.html" class="text-menu-selected">
+                        <li class="menu-selected"><a href="index.php" class="text-menu-selected">
                                 <i class="fas fa-home"></i>Início</a></li>
                         <li><a href="artigos/pags/artigos.php"> <i class="fas fa-file-alt"> </i>Artigos</a></li>
                         <li><a href="narracao.php"> <i class="fab fa-youtube"></i> Narrações</a></li>
@@ -76,7 +76,7 @@
     </div>
 
     <ul id="box-search">
-        <?php include('artigos/pags/titulosPesquisa.html') ?>
+        <?php include( iconv('UTF-8', 'ISO-8859-1','artigos/pags/titulosPesquisa.html')) ?>
     </ul>
 
     <div id="cover-ctn-search"> </div>
@@ -117,15 +117,38 @@
                         <label for="CULTIVAR">CULTIVAR</label>
                         <label for="TULIPAS">TULIPAS</label>
                         <label for="MARGARIDAS">MARGARIDAS</label>
-                        <label for="NODEJS">NODEJS</label>
-                        <label for="CAMPO">CAMPO</label>
+                        <label for="FÉ">FÉ</label>
+                        <label for="ORAÇÃO">ORAÇÃO</label>
 
                     </div>
                 </section>
 
                 <div class="posts" id="pri">
-                  
-                    <div class="post" data-category="LAVANDA">
+
+                    <?php
+                    require('artigos/db/conexao2.php');
+                   
+                ?>
+
+                    <?php
+
+                    $sqlA = "SELECT * FROM artigos LIMIT 9";
+                    $result = mysqli_query($conn, $sqlA);
+                                     
+                    
+                    while ($artigos = mysqli_fetch_array($result)) {
+                       
+                        $a = utf8_encode($artigos['cod_artigo']);
+                        $a = str_replace("artigos/", "artigos/pags/artigos/", $a);
+                        echo iconv('UTF-8', 'ISO-8859-1', str_replace("imgs/", "artigos/pags/imgs/", $a));
+
+                    }
+
+
+                    ?>
+                   
+
+                <!--   <div class="post" data-category="LAVANDA">
 
                         <div class="ctn-img">
                             <img src="img/artigos/flores1.jpg" alt="">
@@ -139,7 +162,7 @@
 
                     </div>
 
-                    <div class="post" data-category="CULTIVAR">
+                      <div class="post" data-category="CULTIVAR">
 
                         <div class="ctn-img"><img src="img/artigos/flores2.jpg" alt=""></div>
                         <h2>Como fazer</h2>
@@ -199,9 +222,9 @@
                         </ul>
                         <a href="#"><button>ler mais</button></a>
 
-                    </div>
+                    </div> -->
 
-                  
+
                 </div>
                 <!--<div class="pag">
                 <ul>
@@ -247,7 +270,7 @@
                 </div>
 
             </div>
-
+           
             <script src="js/script.js"></script>
             <!--<script src="js/scroll.js"></script><-->
 </body>

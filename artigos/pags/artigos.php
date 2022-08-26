@@ -2,7 +2,7 @@
 <html lang="pt">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="iso-8559-1">
     <title>Blog</title>
 
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
@@ -44,7 +44,7 @@
 
                 <nav>
                     <ul>
-                        <li><a href="../../index.html">
+                        <li><a href="../../index.php">
                                 <i class="fas fa-home"></i>Início</a></li>
                         <li class="menu-selected"><a href="#" class="text-menu-selected"> <i class="fas fa-file-alt"> </i>Artigos</a></li>
                         <li><a href="../../narracao.php"> <i class="fab fa-youtube"></i> Narrações</a></li>
@@ -96,8 +96,8 @@
                 <input type="radio" id="TULIPAS" name="categories" value="TULIPAS">
                 <input type="radio" id="MARGARIDAS" name="categories" value="MARGARIDAS">
                 <input type="radio" id="NODEJS" name="categories" value="NODEJS">
-                <input type="radio" id="VUE" name="categories" value="VUE">
-                <input type="radio" id="CAMPO" name="categories" value="CAMPO">
+                <input type="radio" id="FÉ" name="categories" value="FÉ">
+                <input type="radio" id="ORAÇÃO" name="categories" value="ORAÇÃO">
 
                 <section id="categ">
                     <span id="tit-categoria">Categorias ­&shy;</span>
@@ -108,8 +108,8 @@
                         <label class="category-title" for="CULTIVAR">CULTIVAR</label>
                         <label class="category-title" for="TULIPAS">TULIPAS</label>
                         <label class="category-title" for="MARGARIDAS">MARGARIDAS</label>
-                        <label class="category-title" for="NODEJS">NODEJS</label>
-                        <label class="category-title" for="CAMPO">CAMPO</label>
+                        <label class="category-title" for="FÉ">FÉ</label>
+                        <label class="category-title" for="ORAÇÃO">ORAÇÃO</label>
 
                     </div>
                 </section>

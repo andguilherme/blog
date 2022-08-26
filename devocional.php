@@ -26,7 +26,7 @@
 
                 <nav>
                     <ul>
-                        <li><a href="index.html">
+                        <li><a href="index.php">
                                 <i class="fas fa-home"></i>Início</a></li>
                         <li><a href="artigos/pags/artigos.php"> <i class="fas fa-file-alt"> </i>Artigos</a></li>
                         <li><a href="narracao.php"> <i class="fab fa-youtube"></i> Narrações</a></li>

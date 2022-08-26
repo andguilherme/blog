@@ -17,17 +17,18 @@ if (isset($_POST['enviar'])) {
     list($ano, $mes, $dia) = explode("-", $data);
     $data_certa = $dia . '/' . $mes . '/' . $ano;
     $categoria = strtoupper($_POST['categoria']);
-
     $pasta = "imgs/";
     $tmp = $_FILES['imagem']['tmp_name'];
-    $novoNome = uniqid() . ".$extensao";
+    //$novoNome = uniqid() . ".$extensao";
+    $novoNome = 'artigo' . $n . ".$extensao";
     if (in_array($extensao, $permitido)) {
         $pasta = "imgs/";
         if (!is_dir($pasta)) {
             mkdir($pasta, 0755);
         }
         $tmp = $_FILES['imagem']['tmp_name'];
-        $novoNome = uniqid() . ".$extensao";  //uniqid cria um id único
+       // $novoNome = uniqid() . ".$extensao";  //uniqid cria um id único
+       $novoNome = 'artigo' . $n . ".$extensao";
         if (move_uploaded_file($tmp, $pasta . $novoNome)) {  //move_uploaded_file move o arquivo para o servidor
             echo "<script>alert ('Artigo criado com sucesso');
                window.location.href = ('admin.php');
@@ -67,7 +68,7 @@ if (isset($_POST['enviar'])) {
             <div class="menu" id="show-menu">
                 <nav>
                     <ul>
-                    <li><a href="../../../index.html"><i class="fas fa-home"></i>Início</a></li>
+                    <li><a href="../../../index.php"><i class="fas fa-home"></i>Início</a></li>
                     <li class="menu-selected"><a href="artigos.php" class="text-menu-selected"><i class="fas fa-file-alt"> </i>Artigos</a></li>
                     <li><a href="../../../narracao.php"><i class="fab fa-youtube"></i> Narrações</a></li>
                     <li><a href="../../../devocional.php"><i class="fas fa-file-alt"></i> Devocionais</a></li>
@@ -116,6 +117,7 @@ if (isset($_POST['enviar'])) {
 </body>
 </html>');
 }
+
 
 $art = fopen('artigoscriados.php', 'a+');
 

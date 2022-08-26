@@ -38,7 +38,7 @@
             <div class="menu" id="show-menu">
                 <nav>
                     <ul>
-                        <li><a href="../../index.html">Início</a></li>
+                        <li><a href="../../index.php">Início</a></li>
                         <li><a href="artigos.php">Artigos</a></li>
                         <li><a href="../../narracao.html"> Narrações</a></li>
                         <li><a href="../../devocional.php"> Devocionais</a></li>

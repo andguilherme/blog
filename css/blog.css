@@ -146,7 +146,7 @@ input[type="radio"] {
     background-color: #f9f9f9;
 }
 
-/*Post - Publicaciones*/
+/*Post - Publicações*/
 
 
 .container-post {
@@ -288,8 +288,8 @@ input[type="radio"] {
 [value="TULIPAS"]:checked~.posts .post:not([data-category~="TULIPAS"]),
 [value="MARGARIDAS"]:checked~.posts .post:not([data-category~="MARGARIDAS"]),
 [value="NODEJS"]:checked~.posts .post:not([data-category~="NODEJS"]),
-[value="VUE"]:checked~.posts .post:not([data-category~="VUE"]),
-[value="CAMPO"]:checked~.posts .post:not([data-category~="CAMPO"]) {
+[value="FÉ"]:checked~.posts .post:not([data-category~="FÉ"]),
+[value="ORAÇÃO"]:checked~.posts .post:not([data-category~="ORAÇÃO"]) {
 
     display: none;
 }
@@ -300,8 +300,8 @@ input[type="radio"] {
 [value="TULIPAS"]:checked~.container-category [for="TULIPAS"],
 [value="MARGARIDAS"]:checked~.container-category [for="MARGARIDAS"],
 [value="NODEJS"]:checked~.container-category [for="NODEJS"],
-[value="VUE"]:checked~.container-category [for="VUE"],
-[value="CAMPO"]:checked~.container-category [for="CAMPO"] {
+[value="FÉ"]:checked~.container-category [for="VUE"],
+[value="ORAÇÃO"]:checked~.container-category [for="ORAÇÃO"] {
     background: #1a7907e7;
     color: #fff;
 }
