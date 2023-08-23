@@ -76,6 +76,7 @@
                      <option value="../pags/admin.php">Criar Artigo</option>
                      <option selected value="#">Criar Devocional</option>
                      <option value="form-narracao.php">Criar Narracao</option>
+                     <option value="form-deletaArquivo.php">Deletar Artigo</option>
                      <!-- <option value="gerenciar-categoria.php">Gerenciar Categoria</option> -->
                  </select>
              </div>

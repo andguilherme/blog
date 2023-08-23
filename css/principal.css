@@ -33,7 +33,7 @@ main {
 .principal {
     display: block;
     width: 100%;
-    height: 100%;
+    min-height: 800px;
 }
 audio {
     color: #f9f9f9;
@@ -86,7 +86,7 @@ header{
 
 .menu {
     height: 80px;
-    margin-right: 60px;
+    margin-right: 158px;
 }
 
 .menu nav{
@@ -183,7 +183,7 @@ header{
 }
 
 #ctn-icon-search i{
-    transform: translateX(71px);
+    transform: translateX(58px);
     font-size: 18px;
     color: #777777;
     cursor: pointer;
@@ -263,6 +263,8 @@ header{
     padding: 40px 0;
     background: #fff;
     margin-top: 40px;
+    position: relative;
+    top: 100%;
 }
 
 .padmin {
@@ -281,7 +283,7 @@ header{
 }
 
 .container-footer footer .logo-footer img{
-    width: 150px;
+    width: 200px;
 }
 
 .container-footer footer .redes-footer{

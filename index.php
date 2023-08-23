@@ -132,7 +132,7 @@
 
                     <?php
 
-                    $sqlA = "SELECT * FROM artigos LIMIT 9";
+                    $sqlA = "SELECT * FROM artigos LIMIT 12";
                     $result = mysqli_query($conn, $sqlA);
                                      
                     
@@ -146,131 +146,27 @@
 
 
                     ?>
-                   
-
-                <!--   <div class="post" data-category="LAVANDA">
-
-                        <div class="ctn-img">
-                            <img src="img/artigos/flores1.jpg" alt="">
-                        </div>
-                        <h2>Campo de Lavanda</h2>
-                        <span>26 fevereiro 2020 - 1:32 am</span>
-                        <ul class="ctn-tag">
-                            <li>LAVANDA</li>
-                        </ul>
-                        <a href="artigos/artigo.html"><button>Ler mais</button></a>
-
-                    </div>
-
-                      <div class="post" data-category="CULTIVAR">
-
-                        <div class="ctn-img"><img src="img/artigos/flores2.jpg" alt=""></div>
-                        <h2>Como fazer</h2>
-                        <span>26 fevereiro 2020 - 1:32 am</span>
-                        <ul class="ctn-tag">
-                            <li>CULTIVAR</li>
-                        </ul>
-                        <a href="artigos/artigo.html"><button>ler mais</button></a>
-
-                    </div>
-
-                    <div class="post" data-category="TULIPAS CULTIVAR">
-
-                        <div class="ctn-img"><img src="img/artigos/flores3.jpg" alt=""></div>
-                        <h2>Tulipas</h2>
-                        <span>26 fevereiro 2020 - 1:32 am</span>
-                        <ul class="ctn-tag">
-                            <li>TULIPAS</li>
-                            <li>CULTIVAR</li>
-                        </ul>
-                        <a href="#"><button>ler mais</button></a>
-
-                    </div>
-
-                    <div class="post" data-category="MARGARIDAS CULTIVAR">
-
-                        <div class="ctn-img"><img src="img/artigos/flores4.jpg" alt=""></div>
-                        <h2>Uau!😍 Margaridas</h2>
-                        <span>26 fevereiro 2020 - 1:32 am</span>
-                        <ul class="ctn-tag">
-                            <li>MARGARIDAS</li>
-                            <li>CULTIVAR</li>
-                        </ul>
-                        <a href="#"><button>ler mais</button></a>
-
-                    </div>
-
-                    <div class="post" data-category="CSS">
-
-                        <div class="ctn-img"><img src="img/artigos/flores5.jpg" alt=""></div>
-                        <h2>INDICADOR DE ARTIGOS</h2>
-                        <span>26 fevereiro 2020 - 1:32 am</span>
-                        <ul class="ctn-tag">
-                            <li>CSS</li>
-                        </ul>
-                        <a href="#"><button>ler mais</button></a>
-
-                    </div>
-
-                    <div class="post" data-category="PHP">
-
-                        <div class="ctn-img"><img src="img/artigos/flores6.jpg" alt=""></div>
-                        <h2>ARTIGO %</h2>
-                        <span>26 fevereiro 2020 - 1:32 am</span>
-                        <ul class="ctn-tag">
-                            <li>PHP</li>
-                        </ul>
-                        <a href="#"><button>ler mais</button></a>
-
-                    </div> -->
-
-
-                </div>
-                <!--<div class="pag">
-                <ul>
-                    <li><a href="#pri">1</a></li>
-                    <li><a href="#seg">2</a></li>
-                </ul>
-            </div><-->
-                <!-- <div class="setNav">
-
-                    <select name="part" id="ipart" onchange="pag()">
-                        <option selected value="#">1</option>
-                        <option value="artigos/pags/artigos.php">2</option>
-                        <option value="artigos/pags/3.html">3</option>
-                        <option value="#.html">4</option>
-                        <option value="#.html">5</option>
-                        <option value="#.html">6</option>
-                        <option value="#.html">7</option>
-                        <option value="#.html">8</option>
-                        <option value="#.html">9</option>
-                        <option value="#..html">10</option>
-                    </select>
-                    <a href="artigos/pags/2.html"> <i class='bx bxs-chevron-right'></i></a>
-
-                </div> -->
-                <div class="container-footer">
-
-                    <footer>
-                        <div class="logo-footer">
-                            <img src="img/k-logo-t.png" alt="">
-                        </div>
-
-                        <div class="redes-footer">
-                            <a href="#"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
-                            <a href="#"><i class="fab fa-google-plus-g icon-redes-footer"></i></a>
-                            <a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
-                        </div>
-
-                        <hr>
-                        <pre>andersonguilherme.com.br </pre>
-
-                    </footer>
 
                 </div>
 
             </div>
-           
+            <div class="container-footer">
+
+<footer>
+    <div class="logo-footer">
+        <img src="img/kelly-logo.png" alt="">
+    </div>
+
+    <div class="redes-footer">
+        <a href="#"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
+        <a href="#"><i class="fab fa-google-plus-g icon-redes-footer"></i></a>
+        <a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
+    </div>
+
+    <hr>
+    <pre>andersonguilherme.com.br </pre>
+
+</footer>
             <script src="js/script.js"></script>
             <!--<script src="js/scroll.js"></script><-->
 </body>

@@ -52,7 +52,7 @@
 
         <div class="header">
             <!--  <h1 class="main-title">Lista Dinâmica</h1> -->
-            <input type="text" id="input" onkeyup="filter()" placeholder="O que deseja buscar?" value="">
+            <input type="text" id="input" placeholder="O que deseja buscar?" value="">
             <i class="fas fa-search" id="icon-search" aria-hidden="true"></i>
         </div>
         <ul id="ul">

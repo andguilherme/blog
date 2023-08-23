@@ -5,17 +5,17 @@ if (isset($_POST['enviar'])) {
   /*   $arquivo = 'audio' . $n . '.html'; */
     $permitido = array("mp3","mpeg","mpeg4","wav");
     $extensao = pathinfo($_FILES['narracao']['name'], PATHINFO_EXTENSION);
-    $nome = $_POST['nome-narracao'];
+    $nome = str_replace(" ", "_", $_POST['nome-narracao']);  
      $audiopasta = "media/";
     $tmp = $_FILES['narracao']['tmp_name'];
-        $novoNome = uniqid().".$extensao"; 
+        $novoNome = $nome.".$extensao"; 
     if (in_array($extensao, $permitido)){
         $pasta = "../media/";
             if(!is_dir($pasta)) {
             mkdir($pasta, 0755);
             }
         $tmp = $_FILES['narracao']['tmp_name'];
-        $novoNome = uniqid().".$extensao";  //uniqid cria um id único
+        $novoNome = $nome.".$extensao";  //uniqid cria um id único
             if (move_uploaded_file($tmp,$pasta.$novoNome)){  //move_uploaded_file move o arquivo para o servidor
                echo "<script>alert ('narracao incluida com sucesso');
                window.location.href = ('admin.php');

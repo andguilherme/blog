@@ -119,30 +119,31 @@
                     <?php include('artigoscriados.php') ?>
                 </div>
 
-                <div class="container-footer">
 
-                    <footer>
-                        <div class="logo-footer">
-                            <img src="../../img/k-logo-t.png" alt="">
-                        </div>
-
-                        <div class="redes-footer">
-                            <a href="#"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
-                            <a href="#"><i class="fab fa-google-plus-g icon-redes-footer"></i></a>
-                            <a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
-                        </div>
-
-                        <hr>
-                        <h4> </h4>
-
-                    </footer>
-
-                </div>
 
             </div>
+            <div class="container-footer">
+
+        <footer>
+            <div class="logo-footer">
+                <img src="../../img/kelly-logo.png" alt="">
+            </div>
+
+            <div class="redes-footer">
+                <a href="#"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g icon-redes-footer"></i></a>
+                <a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
+            </div>
+
+            <hr>
+            <h4> </h4>
+
+        </footer>
+
+    </div>
     </div>
     </main>
-    </div>
+    
     <script src="../../js/script.js"></script>
     <script>
         a = document.querySelector('<?php echo $catId ?>');

@@ -77,7 +77,7 @@ if (!isset($_SESSION['username'])) {
             <select name="admin" id="iadmin" onchange="pag()" placeholder="Configurações">
                 <option value="../pags/admin.php">Criar Artigo</option>
                 <option value="form-devocional.php">Criar Devocional</option>
-                <option value="#">Criar Narração</option>
+                <option value="form-narracao.php">Criar Narração</option>
                 <option selected value="#">Deletar Artigo</option>
             </select>
         </div>

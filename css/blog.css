@@ -270,7 +270,7 @@ input[type="radio"] {
 }
 
 .baudio {
-    height: 100%;
+    min-height: 1000px;
     background-color: floralwhite;
 }
 
@@ -320,11 +320,19 @@ input[type="radio"] {
     
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 680px) {
     .posts {
         grid-template-columns: repeat(1, 1fr);
+        justify-content: space-around;
+        zoom: 85%;
     }
     .container-info-cover{
         zoom: 54%;
     }  
+}
+
+@media screen and (max-width: 510px) {
+    .posts {
+        zoom:100%;
+    }
 }

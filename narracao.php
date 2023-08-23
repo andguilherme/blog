@@ -109,31 +109,15 @@
 
                     </audio>
                 </div>
-                <div class="audio">
-                    <span class="tit-audio">Narração 2</span>
-                    <span class="tit-audio">titulo 2</span>
-                    <audio id="narrar" controls="controls">
-                        <source src="media/Há um lugar.mp3" type="audio/mpeg">
-
-                    </audio>
-                </div>
-                <div class="audio">
-                    <span class="tit-audio">Narração 3</span>
-                    <span class="tit-audio">titulo 3</span>
-                    <audio id="narrar" controls="controls">
-                        <source src="media/Há um lugar.mp3" type="audio/mpeg">
-
-                    </audio>
-                </div>
-                             
+                                          
                 <?php include('artigos/pags/narracoescriados.html') ?>
         </main>
-
+        
         <div class="container-footer">
-
+ 
             <footer>
                 <div class="logo-footer">
-                    <img src="img/k-logo-t.png" alt="">
+                    <img src="img/kelly-logo.png" alt="">
                 </div>
 
                 <div class="redes-footer">
@@ -143,7 +127,7 @@
                 </div>
 
                 <hr>
-                <h4> </h4>
+                <pre>andersonguilherme.com.br </pre>
 
             </footer>
 

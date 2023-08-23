@@ -5,6 +5,7 @@ session_start();
 if (!isset($_SESSION['username'])) {
     header("Location: ../../index.php");
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -76,28 +77,44 @@ if (!isset($_SESSION['username'])) {
             <select name="admin" id="iadmin" onchange="pag()" placeholder="Configurações">
                 <option value="../pags/admin.php">Criar Artigo</option>
                 <option value="form-devocional.php">Criar Devocional</option>
-                <option selected value="#">Criar Narração</option>
-                <option value="form-deletaArquivo.php">Deletar Artigo</option>
+                <option value="form-narracao">Criar Narração</option>
+                <option value="form-deletaArtigo.php">Deletar Artigo</option>
+                <option selected value="#">Deletar Narração</option>
             </select>
         </div>
 
-        <form id="adm" action="../pags/geraudio.php" method="post" enctype="multipart/form-data">
-        <h1>Criar Narração</h1>
+        <form id="adm" action="../pags/deletaArtigo.php" method="get" enctype="multipart/form-data">
+        <h1>Deletar Narração</h1>
             <div>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome-narracao" required/>
+               <!--  <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome-narracao" required/> -->
             </div>
             <div>
-                <label for="data">Titulo:</label>
-                <input type="text" id="tit-narracao" name="tit-narracao" required/>
+                <!-- <label for="data">Titulo:</label>
+                <input type="text" id="tit-narracao" name="tit-narracao" required/> -->
             </div>
+            
             <div>
-                <label for="img-artigo">Audio:</label>
-                <input type="file" id="img-artigo" name="narracao" required/>
+                <select name="artigosCriados" id="iadmin" >
+                <option value='' disabled selected>Selecione o artigo</option>
+                    <?php 
+                    $pasta ='../media/';
+                    if (is_dir($pasta)){
+                        $cdir = scandir($pasta);
+                        foreach ( $cdir as $arquivo) { 
+                        $caminho = $pasta.$arquivo;
+                     echo "<option value='$caminho'>$arquivo</option>";
+                      }
+
+               }
+                                     ?>
+                    
+                </select>
+                
             </div>
 
             <div class="button">
-                <button type="submit" name="enviar">Salvar</button>
+                <button type="submit" name="deletar">Deletar</button>
             </div>
 
 
@@ -115,7 +132,7 @@ if (!isset($_SESSION['username'])) {
 
         <footer>
             <div class="logo-footer">
-                <img src="../../img/k-logo-t.png" alt="">
+                <img src="../../img/kelly-logo.png" alt="">
             </div>
 
             <div class="redes-footer">
